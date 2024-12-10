@@ -76,9 +76,6 @@ const CreatePost = () => {
     }
   };
 
-  // Using the spread operator `...form` to copy existing state ensures that other properties in the state object are not overwritten as undefined when updating a specific field. `[e.target.name]: e.target.value`.
-
-  // Using [e.target.name] allows the property name to be dynamically determined based on the field being edited, which is crucial for handling forms with multiple fields using a single handler. Without the brackets, you would have to write separate handlers for each field, or incorrectly update the same property each time.
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
