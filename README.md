@@ -39,11 +39,13 @@
 
 ## 🧪 Testing
 
-**Validated functionality and user experience through 10 comprehensive test cases**, focusing on:
+Implemented **10 test cases** using **Jest** and **React Testing Library** to validate functionality and user experience, focusing on:
 
-- **Front-End Testing**: Verified accurate component rendering and UI responsiveness.
-- **API Testing**: Ensured proper data flow and error handling for OpenAI API integration.
-- **End-to-End Validation**: Confirmed seamless communication between front end and back end.
+- **Front-end component rendering**: Ensured accurate and responsive rendering of UI components.
+- **API call handling and responses**: Verified smooth interactions and error handling within the front-end environment.
+- **User interactions**: Tested dynamic features like form submissions and button clicks to ensure reliability.
+
+This emphasis on front-end testing demonstrates a strong understanding of user-centric design and front-end development best practices, aligning with your goal of applying for a front-end role.
 
 ---
 
@@ -53,20 +55,37 @@
 
 ```
 ├── client/
-│   ├── components/
-│   ├── pages/
-│   ├── styles/
-│   ├── utils/
-│   └── tests/
+│   ├── __mocks__/
+│   ├── node_modules/
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── styles/
+│   │   ├── utils/
+│   │   └── tests/
+│   ├── .babelrc
+│   ├── .eslintrc.cjs
+│   ├── .gitignore
+│   ├── index.html
+│   ├── jest.config.cjs
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── postcss.config.js
+│   ├── README.md
+│   ├── tailwind.config.js
+│   └── vite.config.js
 ├── server/
-│   ├── controllers/
-│   ├── models/
+│   ├── mongodb/
+│   ├── node_modules/
 │   ├── routes/
-│   ├── config/
-│   └── tests/
-├── public/
-├── package.json
-└── README.md
+│   ├── .env
+│   ├── .gitignore
+│   ├── index.js
+│   ├── package-lock.json
+│   ├── package.json
+├── README.md
+
 ```
 
 ---
