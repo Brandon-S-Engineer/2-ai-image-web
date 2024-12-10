@@ -45,8 +45,6 @@ Implemented **10 test cases** using **Jest** and **React Testing Library** to va
 - **API call handling and responses**: Verified smooth interactions and error handling within the front-end environment.
 - **User interactions**: Tested dynamic features like form submissions and button clicks to ensure reliability.
 
-This emphasis on front-end testing demonstrates a strong understanding of user-centric design and front-end development best practices, aligning with your goal of applying for a front-end role.
-
 ---
 
 ## 📂 File Structure
@@ -72,7 +70,6 @@ This emphasis on front-end testing demonstrates a strong understanding of user-c
 │   ├── package-lock.json
 │   ├── package.json
 │   ├── postcss.config.js
-│   ├── README.md
 │   ├── tailwind.config.js
 │   └── vite.config.js
 ├── server/
