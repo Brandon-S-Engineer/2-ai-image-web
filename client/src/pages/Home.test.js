@@ -354,7 +354,7 @@ afterAll(() => {
 });
 
 describe('Home Component', () => {
-  // 1. should render header and description on initial load
+  //? 1. Verify that the header and description are rendered correctly upon initial load.
   it('should render header and description on initial load', async () => {
     const mockPosts = [
       { id: 1, name: 'Post 1', prompt: 'Beautiful sunset' },
@@ -378,7 +378,7 @@ describe('Home Component', () => {
     expect(screen.getByText(/Browse through a collection of imaginative and visually stunning images/i)).toBeInTheDocument();
   });
 
-  // 2. should display the loader while fetching posts
+  //? 2. Check that the loader appears while fetching posts and disappears after the fetch completes.
   it('should display the loader while fetching posts', async () => {
     // Mock fetch with a delay to simulate loading state
     global.fetch = jest.fn(
@@ -411,7 +411,7 @@ describe('Home Component', () => {
     });
   });
 
-  // 3. should fetch and render posts from API
+  //? 3. Ensure that posts fetched from the API are rendered correctly.
   it('should fetch and render posts from API', async () => {
     const mockPosts = [
       { id: 1, name: 'Post 1', prompt: 'Beautiful sunset' },
@@ -439,7 +439,7 @@ describe('Home Component', () => {
     expect(screen.getByText(/Post 2: Ocean waves/i)).toBeInTheDocument();
   });
 
-  // 4. should filter posts when a search term is entered
+  //? 4. Test the filtering functionality by entering a search term and verifying the filtered results.
   it('should filter posts when a search term is entered', async () => {
     const mockPosts = [
       { id: 1, name: 'Post 1', prompt: 'Beautiful sunset' },
@@ -482,7 +482,7 @@ describe('Home Component', () => {
     });
   });
 
-  // 5. should display fallback message if no search results are found
+  //? 5. Confirm that a fallback message appears when no search results match the entered term.
   it('should display fallback message if no search results are found', async () => {
     const mockPosts = [
       { id: 1, name: 'Post 1', prompt: 'Beautiful sunset' },
@@ -517,7 +517,7 @@ describe('Home Component', () => {
     });
   });
 
-  // 6. should display fallback message if no posts exist
+  //? 6. Validate that a fallback message is displayed when no posts exist.
   it('should display fallback message if no posts exist', async () => {
     // Mock fetch with no posts
     global.fetch = jest.fn(() =>
