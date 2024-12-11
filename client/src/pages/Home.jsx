@@ -17,6 +17,7 @@ const RenderCards = ({ data, title }) => {
 const Home = () => {
   const [loading, setLoading] = useState(false);
   const [allPosts, setAllPosts] = useState(null);
+
   const [searchText, setSearchText] = useState('');
   const [searchedResults, setSearchedResults] = useState(null);
 
@@ -118,7 +119,6 @@ const Home = () => {
 export default Home;
 
 // import { useEffect, useState, useRef } from 'react';
-
 // import { Card, FormField, Loader } from '../components';
 
 // // Child Component

@@ -1,5 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
+import { act } from '@testing-library/react';
 import App from './App';
 
 describe('App Component', () => {
@@ -26,7 +27,9 @@ describe('App Component', () => {
     expect(logoLink).toHaveAttribute('href', '/');
 
     // Simulate clicking the logo
-    await user.click(logoLink);
+    await act(async () => {
+      await user.click(logoLink);
+    });
 
     // Verify that the Home component renders
     expect(
@@ -42,7 +45,9 @@ describe('App Component', () => {
     expect(createButton).toHaveAttribute('href', '/create-post');
 
     // Simulate clicking the "Create" button
-    await user.click(createButton);
+    await act(async () => {
+      await user.click(createButton);
+    });
 
     // Verify CreatePost component renders
     expect(screen.getByText(/generate an imaginative image through dall-e ai and share it with the community/i)).toBeInTheDocument();
