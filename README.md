@@ -39,11 +39,12 @@
 
 ## 🧪 Testing
 
-Implemented **10 test cases** using **Jest** and **React Testing Library** to validate functionality and user experience, focusing on:
+**Developed and executed 35 Jest test cases with React Testing Library**, providing comprehensive coverage for the front end. The tests focus on:
 
-- **Front-end component rendering**: Ensured accurate and responsive rendering of UI components.
-- **API call handling and responses**: Verified smooth interactions and error handling within the front-end environment.
-- **User interactions**: Tested dynamic features like form submissions and button clicks to ensure reliability.
+- Accurate rendering of front-end components.
+- Smooth handling of API requests and responses.
+- Validation of user interactions and form submissions.
+- Ensuring consistent functionality across key pages and components.
 
 ---
 
