@@ -61,8 +61,7 @@
 │   │   ├── components/
 │   │   ├── pages/
 │   │   ├── styles/
-│   │   ├── utils/
-│   │   └── tests/
+│   │   └── utils/
 │   ├── .babelrc
 │   ├── .eslintrc.cjs
 │   ├── .gitignore
@@ -71,6 +70,7 @@
 │   ├── package-lock.json
 │   ├── package.json
 │   ├── postcss.config.js
+│   ├── setupTests.js
 │   ├── tailwind.config.js
 │   └── vite.config.js
 ├── server/
