@@ -7,7 +7,7 @@ dotenv.config();
 const router = express.Router();
 
 const configuration = new Configuration({
-  //! Comment/Uncomment to activate Open-AI API
+  //! Toggle to activate Open-AI API
   // apiKey: process.env.OPENAI_API_KEY,
 });
 
